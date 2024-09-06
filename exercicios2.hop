@@ -1,0 +1,21 @@
+uses fluxo;
+dec classif : num # num -> num # num;
+dec div84 : num -> truval;
+dec extenso : num -> list char;
+dec calculadora : num # num # num -> num;
+
+--- classif (x, y) <= if x < y then (x, y) else (y, x);
+
+--- div84 n <= n mod 8 = 4;
+
+--- extenso 0 <= "zero";
+--- extenso 1 <= "um";
+--- extenso 2 <= "dois";
+--- extenso 3 <= "tres";
+--- extenso _ <= "Valor invalido";
+
+--- calculadora (x, y, 0) <= x + y;
+--- calculadora (x, y, 1) <= x - y;
+--- calculadora (x, y, 10) <= x * y;
+--- calculadora (x, y, 11) <= x / y;
+--- calculadora (x, y, _) <= error ("entrou errado");
