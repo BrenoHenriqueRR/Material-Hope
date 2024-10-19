@@ -1,0 +1,11 @@
+uses base1, base2;
+dec abundante : num -> truval;
+dec lstdiv84 : num -> list num;
+dec primeiros : num # list num -> list num;
+dec itera : (num -> num) # num -> list num;
+
+--- primeiros (0, _) <= [];
+--- primeiros (_, []) <= [];
+--- primeiros (n, x :: xs) <= x :: primeiros (n - 1, xs);
+
+--- itera (i, n) <= n :: itera (i, i n);
